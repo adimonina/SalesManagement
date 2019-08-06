@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "OrderDetails" table = "orderDetails">
+      
+      <id name = "orderDetailsID" type = "uuid" column = "orderDetailsID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "orderID" column = "orderID" type = "uuid"/>
+      <property name = "amount" column = "amount" type = "int"/>      
+      <property name = "pricePerUnit" column = "pricePerUnit" type = "double"/>
+      <property name = "productID" column = "productID" type = "int"/>
+          
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Administrator" table = "administrator">
+      
+      <id name = "adminID" type = "uuid" column = "adminID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "paasword" column = "paasword" type = "long"/>
+   </class>
+</hibernate-mapping>

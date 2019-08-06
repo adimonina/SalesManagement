@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Product" table = "product">
+      
+      <id name = "ProductID" type = "int" column = "productID">
+         <generator class="native"/>
+      </id>
+     
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "color" column = "color" type = "string"/>      
+      <property name = "size" column = "size" type = "string"/>
+      <property name = "unitsInStock" column = "unitsInStock" type = "int"/>
+      <property name = "price" column = "price" type = "double"/>
+
+      
+   </class>
+</hibernate-mapping>
