@@ -17,6 +17,7 @@ import model.Customer;
 import model.Order;
 import model.OrderDetails;
 import model.Product;
+import service.Service;
 
 public class MainClass {
 	
@@ -57,5 +58,9 @@ public class MainClass {
 		CanceledOrders firstCanceled = new CanceledOrders (firstOrder.getOrderID(), LocalDate.of(2019, 3, 05) , "wrong size");
 		CanceledOrdersDBImpl c = new CanceledOrdersDBImpl();
 		c.saveCanceledOrders(firstCanceled);
-	}
+		
+		Service service= new Service();
+		System.out.println(service.testingAdminOrCustomer("b-6a4847a2ff80"));
+		
+		}
 }

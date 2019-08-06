@@ -2,12 +2,11 @@ package dbIMPL;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import db.HibernateUtil;
 import dbAPI.ProductDBApi;
 import model.Customer;
 import model.Product;
-
+import service.Service;
 public class ProductDBImpl implements ProductDBApi{
 
 	 public void saveProduct (Product product)

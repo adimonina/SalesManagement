@@ -50,6 +50,12 @@ public class Customer {
 		this.isActive = isActive;
 		this.password = password;
 	}
+	
+
+	public Customer() {
+		super();
+	}
+
 	public UUID getCustomerID() {
 		return customerID;
 	}

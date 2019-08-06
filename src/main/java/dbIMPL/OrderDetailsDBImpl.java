@@ -25,12 +25,7 @@ import model.OrderDetails;
 		  }
 		  }
 
-		@Override
-		public void calculateTotalPrice(UUID orderID) {
-			// TODO Auto-generated method stub
-			
-		}
-
+	
 		@Override
 		public void updateTotalPrice(UUID orderID) {
 			// TODO Auto-generated method stub
@@ -47,5 +42,12 @@ import model.OrderDetails;
 		public void SizeToColorRatio(String size, String color) {
 			// TODO Auto-generated method stub
 			
+		}
+
+
+		@Override
+		public double calculateTotalPrice(UUID orderID) {
+			// TODO Auto-generated method stub
+			return 0;
 		}
 }
